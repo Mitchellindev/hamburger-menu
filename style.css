@@ -1,0 +1,120 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header {
+	min-height: 100vh;
+	width: 100vw;
+	background-image: url("https://wallpapers.com/images/hd/dark-nature-s3in5w7pgukadq51.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 1.2rem 3%;
+}
+
+ul {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.mobile-menu {
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: black;
+	width: 40%;
+	height: 100%;
+	flex-direction: column;
+	display: none;
+	z-index: 10;
+}
+
+.menu {
+	z-index: 100;
+	padding-inline: 1rem;
+	padding-block: 0.6rem;
+	background-color: transparent;
+	color: white;
+	font-size: 1rem;
+	border: 1px solid #fff;
+	display: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+li a {
+	color: white;
+	font-size: 1rem;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.logo {
+	color: white;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+}
+
+.hero {
+	color: white;
+	padding: 3rem 3%;
+}
+
+/* mobile device */
+/* @media (max-width: 375px) {
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul{
+        padding: 1.5rem 0;
+        gap: 1rem;
+    }
+
+    
+} */
+
+@media (max-width: 500px) {
+	.desktop-menu {
+		display: none;
+	}
+
+	.menu{
+		display: flex;
+	}
+
+	/* .mobile-menu{
+		display: flex;
+	} */
+}
+
+/* @media (min-width: 500px) {
+	.mobile-menu {
+		display: none;
+	}
+	.menu {
+		display: none;
+	}
+} */
+/*tablets*/
+/* @media (max-width: 768px) {
+    
+} */
+
+/*desktop view*/
+/* @media (max-width: 1024px) {
+    
+} */
