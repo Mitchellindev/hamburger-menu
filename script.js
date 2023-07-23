@@ -5,10 +5,10 @@ let menuDisplay = false;
 
 function toggleMenu() {
 	if (menuDisplay == false) {
-		menuList.style.display = "flex";
+		menuList.style.right = "0";
 		menuDisplay = true;
 	} else {
-		menuList.style.display = "none";
+		menuList.style.right = "-50%";
 		menuDisplay = false;
 	}
 }
